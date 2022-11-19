@@ -1,0 +1,81 @@
+{
+    "所研究方向": [
+        "生物信息学",
+        "健康大数据挖掘",
+        "深度学习",
+        "并行计算",
+        "舞蹈大数据",
+        "安全大数据等"
+    ],
+    "讲授课程": [
+        "健康大数据挖掘",
+        "机器学习与Python",
+        "Python编程等"
+    ],
+    "教育经历": [
+        "1996-2000: 中国科学技术大学，少年班学院，计算机软件",
+        "2000-2005: 中国科学技术大学，计算机学院，计算机软件"
+    ],
+    "工作经历": [
+        "教授，博士生导师，中国科学院百人计划，吉林大学“唐敖庆”特聘教授，吉林省高层次人才B类人选，吉林省第六批拔尖创新人才第三层次人选，IEEE（美国电气和电子工程师协会）高级会员。团队主要从事健康大数据挖掘核心算法、以及融合生物组学、医学影像、心电脑电和电子病历等异构医学大数据的融合建模算法等方面的研究。",
+        "主持或参与包括863和中科院先导等各级别项目，主持金额合计近500万元。已发表SCI索引期刊学术论文104篇。根据SCI数据库统计，总引用次数2083次，他引次数1614次。学术成果多次在包括Nature Protocols、Nucleic Acids Research、和Bioinformatics等学术期刊上发表。相关成果连续荣获多次国际疾病预测竞赛较好排名。应邀担任多个SCI索引期刊的副主编或编委，并多次（每一类均超过20次）应邀评审国际和国内项目标书、国际学术期刊和会议的投稿论文。",
+        "目前已毕业的学生找到的工作机会包括阿里巴巴、字节跳动、百度和南方信投等大数据挖掘领域的大数据分析师等职位，也有多位HILabers选择国内外顶级高校继续深造。欢迎有志于从事大数据领域研究和开发的同学保研和报考本实验室的计算机应用专业博士研究生、计算机学院和软件学院学硕和专硕。"
+    ],
+    "科研项目": [
+        "曾经与正在承担相关项目500万。"
+    ],
+    "学术论文": [
+        "* 共同第一作者， # 通信作者。以下为部分论文列表，近期论文也可以在搜索引擎中用英文 Fengfeng Zhou 来检索。HILab每年都有多位本科生作为第一作者或主要作者发表高水平SCI论文，提升了进一步深造的申请材料科研经历。",
+        "Meiyu Duan, Lei Zhang, Yueying Wang, Yusi Fan, Shuai Liu, Qiong Yu, Lan Huang, Fengfeng Zhou#, “Computational pan-cancer characterization of model-based quantitative transcription regulations dysregulated in regional lymph node metastasis”. Accepted by Computers in Biology and Medicine, 2021.",
+        "Shuai Liu, Zheng Chen, Huahui Zhou, Kunlin He, Meiyu Duan, Qichen Zheng, Pengcheng Xiong, Lan Huang, Qiong Yu, Guoxiong Su, Fengfeng Zhou#, “DiaMole: Mole Detection and Segmentation Software for Mobile Phone Skin Images”. Accepted by Journal of Healthcare Engineering, 2021.",
+        "Sida Gao, Puli Wang, Yuming Feng, Xuchen Xie, Meiyu Duan, Yusi Fan, Shuai Liu, Lan Huang, Fengfeng Zhou#, “RIFS2D: A two-dimensional version of a randomly restarted incremental feature selection algorithm with an application for detecting low-ranked biomarkers”. Computers in Biology and Medicine, 133:104405, 2021.",
+        "Daiguo Deng, Xiaowei Chen, Ruochi Zhang, Zengrong Lei, Xiaojian Wang#, Fengfeng Zhou#, “XGraphBoost: Extracting Graph Neural Network-Based Features for a Better Prediction of Molecular Properties”. Accepted by Journal of Chemical Information and Modeling, 2021.",
+        "Fengfeng Zhou, Meiyu Duan, “Impacts of high-quality public data: Special issue on integrating public and in-house biomedical data”. Accepted by Journal of Bioinformatics and Computational Biology, 2021.",
+        "Xiangju Liu, Yu Zhang, Chunli Fu, Ruochi Zhang, Fengfeng Zhou#, “EnRank: An Ensemble Method to Detect Pulmonary Hypertension Biomarkers Based on Feature Selection and Machine Learning Models”. Frontiers in Genetics, 12:601, 2021.",
+        "Tong Shao, Wenfang Wang, Meiyu Duan, Jiahui Pan, Zhuoyuan Xin, Baoyue Liu, Fengfeng Zhou, Guoqing Wang, “Application of Bayesian phylogenetic inference modelling for evolutionary genetic analysis and dynamic changes in 2019-nCoV”. Briefings in bioinformatics, 22(2): 896-904, 2021.",
+        "Gancheng Zhu, Yuci Zhou, Fengfeng Zhou, Min Wu, Xiangping Zhan, Yingdong Si, Peng Wang, Jun Wang#, “Proactive Personality Measurement Using Item Response Theory and Social Media Text Mining”. Frontiers in Psychology, 2784, 2021.",
+        "Jiahui Pan, Xizi Luo, Jiang Bian, Tong Shao, Chaoying Li, Tingting Zhao, Shiwei Zhang, Fengfeng Zhou, Guoqing Wang, “Identification of Genomic Islands in Synechococcus sp. WH8102 Using Genomic Barcode and Whole-Genome Microarray Analysis”. Current Bioinformatics, 16(1): 24-30, 2021.",
+        "Yaoyao Sun, Yueying Wang, Rixin Li, Guojun Kang, Mingyuan Zhang, Xin Chen, Mengdi Jin, Yang Liu, Yang He, Xiaojing Zhu, Qi Kang, Fengfeng Zhou, Qiong Yu#, “ Surgical resection of primary tumor is associated with prolonged survival in low-grade pancreatic neuroendocrine tumors”. Clinics and research in hepatology and gastroenterology, 45(1): 101432, 2021.",
+        "Xuechen Mu, Yueying Wang, Meiyu Duan, Shuai Liu, Fei Li, Xiuli Wang, Kai Zhang, Lan Huang, Fengfeng Zhou#, “A Novel Position-Specific Encoding Algorithm (SeqPose) of Nucleotide Sequences and Its Application for Detecting Enhancers”. International Journal of Molecular Sciences, 22(6):3079, 2021.",
+        "Quewang Liu, Yueying Wang, Meiyu Duan, Yusi Fan, Xingyuan Pan, Shuai Liu, Qiong Yu, Lan Huang, Fengfeng Zhou#, “Females and Males Show Differences in Early-Stage Transcriptomic Biomarkers of Lung Adenocarcinoma and Lung Squamous Cell Carcinoma”. Diagnostics, 11:2(347), 2021.",
+        "Yueying Wang, Shuai Liu, Zhao Wang, Yusi Fan, Jingxuan Huang, Lan Huang, Zhijun Li, Xinwei Li, Mengdi Jin, Qiong Yu#, Fengfeng Zhou#, “A Machine Learning-Based Investigation of Gender-Specific Prognosis of Lung Cancers”. Medicina, 57(2):99, 2021.",
+        "Yuanyuan Han, Lan Huang#, Fengfeng Zhou#, “A dynamic recursive feature elimination framework (dRFE) to further refine a set of OMIC biomarkers”. Accepted by Bioinformatics, 2021. (影响因子：5.610，分区：2区)",
+        "Shuai Liu, Han Li, Qichen Zheng, Lu Yang, Meiyu Duan, Xin Feng, Fei Li, Lan Huang, Fengfeng Zhou#, “Survival time prediction of breast cancer patients using feature selection algorithm Crystall”. IEEE Access, 9:24433-24445, 2021.",
+        "Haishi Zhao, Lorenzo Bruzzone, Renchu Guan, Fengfeng Zhou, Chen Yang#, “Spectral-Spatial Genetic Algorithm-Based Unsupervised Band Selection for Hyperspectral Image Classification”. Accepted by IEEE Transactions on Geoscience and Remote Sensing, 2021.",
+        "Heyu Meng, Yueying Wang, Fengfeng Zhou, Jianjun Ruan, Meiyu Duan, Xue Wang, Qiong Yu, Ping Yang, Weiwei Chen, Fanbo Meng#, “Reduced Serum Zinc Ion Concentration Is Associated with Coronary Heart Disease”. Biological Trace Element Research, 1-10, 2021.",
+        "Ruochi Zhang, Zhehao Guo, Yue Sun, Qi Lu, Zijian Xu, Zhaomin Yao, Meiyu Duan, Shuai Liu, Yanjiao Ren, Lan Huang, Fengfeng Zhou#, “COVID19XrayNet: A Two-Step Transfer Learning Model for the COVID-19 Detecting Problem Based on a Limited Number of Chest X-Ray Images”. Interdisciplinary Sciences: Computational Life Sciences, 12(4): 555-565, 2020.",
+        "Jinpu Cai, Yuyang Xu, Wen Zhang, Shiying Ding, Yuewei Sun, Jingyi Lyu, Meiyu Duan, Shuai Liu, Lan Huang, Fengfeng Zhou#, “A comprehensive comparison of residue-level methylation levels with the regression-based gene-level methylation estimations by ReGear”. Briefings in Bioinformatics, 22(4):bbaa253, 2021. (影响因子：8.990，分区：2区)",
+        "Zhipeng Wei, Shiying Ding, Meiyu Duan, Shuai Liu, Lan Huang, Fengfeng Zhou#, “FeSTwo, a two-step feature selection algorithm based on feature engineering and sampling for the chronological age regression problem”. Computers in Biology and Medicine, 125: 104008, 2020.",
+        "Jialiang Li, Zhaomin Yao, Meiyu Duan, Shuai Liu, Fei Li, Haiyang Zhu, Zhiqiang Xia, Lan Huang, Fengfeng Zhou#, “MuscNet, a Weighted Voting Model of Multi-Source Connectivity Networks to Predict Mild Cognitive Impairment Using Resting-State Functional MRI”. IEEE Access, 8: 174023-174031, 2020.",
+        "Haochen Yao, Nan Zhang, Ruochi Zhang, Meiyu Duan, Tianqi Xie, Jiahui Pan, Ejun Peng, Juanjuan Huang, Yingli Zhang, Xiaoming Xu, Hong Xu#, Fengfeng Zhou#, Guoqing Wang#. “Severity Detection for the Coronavirus Disease 2019 (COVID-19) Patients Using a Machine Learning Model Based on the Blood and Urine Tests”. Frontiers in Cell and Developmental Biology,8:683, 2020. (影响因子：5.201，分区：2区)",
+        "Meiyu Duan, Haoqiu Song, Chaoyu Wang, Jiaxin Zheng, Hui Xie, Yupeng He, Lan Huang, Fengfeng Zhou#. “Detection and Independent Validation of Model-Based Quantitative Transcriptional Regulation Relationships Altered in Lung Cancers”. Frontiers in Bioengineering and Biotechnology, 8:582, 2020. (影响因子：3.644，分区：2区)",
+        "Shuhan Yang, Bo Li, Yinda Zhang, Meiyu Duan, Shuai Liu, Yexian Zhang, Xin Feng, Renbo Tan, Lan Huang, Fengfeng Zhou#, “Selection of features for patient-independent detection of seizure events using scalp EEG signals”. Computers in Biology and Medicine, 119: 103671, 2020. (影响因子：3.434，分区：3区)",
+        "Xin Feng, Xubing Hao, Ruoyao Shi, Zhiqiang Xia, Lan Huang, Qiong Yu#, Fengfeng Zhou#, “Detection and comparative analysis of methylomic biomarkers of rheumatoid arthritis”. Frontiers in Genetics, 11: 238, 2020. (影响因子：3.258，分区：2区)",
+        "Xiaoqian Gao, Shuai Liu, Haoqiu Song, Xin Feng, Meiyu Duan, Lan Huang, Fengfeng Zhou#, “AgeGuess, a Methylomic Prediction Model for Human Ages”. Frontiers in Bioengineering and Biotechnology, 8: 80, 2020. (影响因子：3.644，分区：2区)",
+        "Zheng Chen, Meng Pang, Zixin Zhao, Shuainan Li, Rui Miao, Yifan Zhang, Xiaoyue Feng, Xin Feng, Yexian Zhang, Meiyu Duan, Lan Huang, Fengfeng Zhou#, “Feature selection may improve deep neural networks for the bioinformatics problems”. Bioinformatics, 36(5): 1542-1552, 2020. (影响因子：5.610，分区：1区)",
+        "Chao Feng, Shufen Liu, Hao Zhang, Renchu Guan, Dan Li, Fengfeng Zhou, Yanchun Liang, Xiaoyue Feng, “Dimension Reduction and Clustering Models for Single-Cell RNA Sequencing Data: A Comparative Study”. International Journal of Molecular Sciences, 21(6): 2181, 2020. (影响因子：4.556，分区：2区)",
+        "Chenwei Lou, Jian Zhao, Ruoyao Shi, Qian Wang, Wenyang Zhou, Yubo Wang, Guoqing Wang#, Lan Huang, Xin Feng, Fengfeng Zhou#. “sefOri: selecting the best-engineered sequence features to predict DNA replication origins”. Bioinformatics, 36(1): 49-55, 2019. (影响因子：5.610，分区：1区)"
+    ],
+    "获奖情况": [
+        "2020年：阿里云天池大赛“AI开发者创新应用赛”创新奖，“智能问诊与辅助推荐系统”，指导老师。",
+        "2016年：国际排名第四，“Systems Toxicology Computational Challenge”, sbv IMPROVER competition 2016, HILab代表队，指导老师。",
+        "2015年：“中国好创意”全国青年大数据创新大赛（国家互联网信息办公室网络数据与技术局、中国计算机学会），“基于大数据的未知病原检测方法构建”赛题，二等奖，HI-15MW代表队，指导老师。"
+    ],
+    "社会兼职": [
+        "学术组织成员",
+        "委员（2016-现在，首批委员），中国计算机学会生物信息学专业组，2016年-现在。",
+        "委员（2016-现在），中国计算机学会计算机应用专业委员会，2016年-现在。",
+        "通讯委员（2016-现在），中国计算机学会大数据专业委员会，2016年-现在。",
+        "高级会员（2016年-现在），会员（2013-2016），中国计算机学会，2013-现在。",
+        "终身会员（2013－现在），中国运筹学会，2013－现在。",
+        "高级会员（2013－现在），会员（2012-2013），国际电子电路工程师协会（IEEE），2012－现在。",
+        "科研服务",
+        "副主编 (2016-现在，SCI索引，影响因子4.589): Computers in Biology and Medicine.",
+        "副主编（2012-现在，SCI索引，影响因子2.233)：Interdisciplinary Sciences: Computational Life Sciences.",
+        "副主编（2011-现在，SCI索引，影响因子4.599）：Frontiers in Genetics."
+    ],
+    "治学格言": [
+        "鼓励探索",
+        "严谨治学"
+    ]
+}
