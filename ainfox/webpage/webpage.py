@@ -4,7 +4,7 @@ import re
 import bs4
 from bs4 import BeautifulSoup
 import requests
-import domnode
+from ainfox.webpage import domnode
 
 
 class WebPage:

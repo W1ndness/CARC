@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 import re
-from typing import Union, Any
+from typing import Union, Any, Dict, List
 
 import pandas as pd
 
@@ -9,7 +9,7 @@ import pandas as pd
 class TableDealer:
     @staticmethod
     def to_table(table_tag: str):
-        return pd.read_html(table_tag, encoding='utf-8', header=0)[0]
+        return pd.read_html(table_tag, encoding='utf-8')[0]
 
     @staticmethod
     def replace_br(table_tag: str, replace_with='_._br_._'):
@@ -50,7 +50,7 @@ class TableDealer:
         if list(table_df.columns) != ['key', 'value']:
             dealer.rename_headers(table_df)
 
-        _entries: dict[str, list[Union[str, Any]]] = {}
+        _entries: Dict[str, List[Union[str, Any]]] = {}
         for index, row in table_df.iterrows():
             key, value = str(row['key']), str(row['value'])
             key = key.strip()

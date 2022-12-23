@@ -5,14 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/dealer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/webpage" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (carc)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="PyNamespacePackagesService">
-    <option name="namespacePackageFolders">
-      <list>
-        <option value="$MODULE_DIR$/dealer" />
-      </list>
-    </option>
   </component>
 </module>

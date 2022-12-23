@@ -1,7 +1,7 @@
 import re
 
 from ainfox.webpage import webpage
-import tagfilter
+from ainfox.dealer import tagfilter
 
 class DivFilter(tagfilter.TagFilter):
     def __init__(self, page: webpage.WebPage):

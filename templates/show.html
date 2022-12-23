@@ -5,7 +5,7 @@
     <script type="text/javascript" src="http://cj.cbcie.com/js/jquery-1.6.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>展示</title>
-    <style type="text/css">@import"model.css";</style>
+    <style type="text/css">@import "../static/css/model.css";</style>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
     </table>
 </div>
 <script>
-    let api ="http://127.0.0.1:5000/shuju/"
+    let api = "/data"
     fetch(api).then(datajson=>datajson.json().then(datajson=>{
         console.log(typeof(datajson))
         console.log(datajson)

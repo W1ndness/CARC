@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <style type="text/css">@import "../static/css/model.css";</style>
+</head>
+<body>
+<div id="logo">
+    <img src="../static/images/title.png" class="logo">
+</div>
+<div>
+    <form action="/query" method="POST">
+        <p>
+        <div class="searchbar">
+            <img src=../static/images/search.png class="mg">
+            <input type="text" id="search" value="Type a URL to Extract"
+                   onfocus="if(value==='Type a URL to Extract')value=''"
+                   onblur="if(!value)value='Type a URL to Extract'"
+                   name="url">
+        </div>
+        </p>
+    </form>
+</div>
+</body>
+</script>
+</html>

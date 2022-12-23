@@ -1,8 +1,8 @@
-from tagfilter import TagFilter
+from ainfox.dealer import tagfilter
 from ainfox.webpage import webpage
 
 
-class TableFilter(TagFilter):
+class TableFilter(tagfilter.TagFilter):
     def __init__(self, page: webpage.WebPage):
         super().__init__(page)
         self.__tag = "table"
