@@ -1,11 +1,24 @@
 import os.path
 import re
+import unicodedata
 
 import bs4
 from bs4 import BeautifulSoup
 import requests
 from ainfox.webpage import domnode
+from lxml.html.clean import Cleaner
 
+
+def clean_spaces(text):
+    return " ".join(re.split(r"\s+", text.strip()))
+
+
+def clean_format_str(text):
+    """Cleans unicode control symbols, non-ascii chars, and extra blanks."""
+    text = "".join(ch for ch in text if unicodedata.category(ch)[0] != "C")
+    text = "".join([c if ord(c) < 128 else "" for c in text])
+    text = clean_spaces(text)
+    return text
 
 class WebPage:
     def __init__(self, **kwargs):
@@ -118,8 +131,17 @@ class WebPage:
             raise Exception("Haven't got url of the website.")
         if self.response is None:
             raise Exception("Haven't got response from the website.")
-        text = self.response.text
-        self.soup = BeautifulSoup(text, parser)
+        html = self.response.text
+
+        cleaner = Cleaner()
+        cleaner.javascript = True
+        cleaner.style = True
+        html = html.replace("\0", "")  # Delete NULL bytes.
+        # Replace the <br> tags with a special token for post-processing the xpaths.
+        # html = clean_format_str(html)
+        html = cleaner.clean_html(html)
+
+        self.soup = BeautifulSoup(html, parser)
 
     def traverse(self, func):
         """

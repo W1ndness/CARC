@@ -25,7 +25,7 @@ class DivDealer:
 
     @staticmethod
     def clean_space(div_tag: str):
-        return unicodedata.normalize('NFKD', div_tag)
+        return " ".join(re.split(r"\s+", div_tag.strip()))
 
     @staticmethod
     def replace(div_tag: str):
@@ -110,10 +110,13 @@ class DivDealer:
                             temp = cur.replace(':', "<colon>")
                         else:
                             temp = cur
-                        if (cur.previous_element.name == 'a' and cur.previous_element.previous_element.text != cur) \
-                                or isinstance(cur.previous_element, bs4.element.NavigableString):
-                            content = content[:-5]
-                        content += temp.strip() + '<sep>'
+                        # if (cur.previous_element.name == 'a' and cur.previous_element.previous_element.text != cur) \
+                        #         or isinstance(cur.previous_element, bs4.element.NavigableString):
+                        #     content = content[:-5]
+                        print("content:", content)
+                        print("temp:", temp)
+                        if temp.strip() != '':
+                            content += temp.strip() + '<sep>'
                     cur = cur.next_element
                 # content = content[:-5]
                 if i == 0:
@@ -134,26 +137,34 @@ class DivDealer:
                             temp = cur.replace(':', "<colon>")
                         else:
                             temp = cur
-                        if (cur.previous_element.name == 'a' and cur.previous_element.previous_element.text != cur) \
-                                or isinstance(cur.previous_element, bs4.element.NavigableString):
-                            content = content[:-5]
-                            print(content)
-                        content += temp.strip() + '<sep>'
+                        # if (cur.previous_element.name == 'a' and cur.previous_element.previous_element.text != cur) \
+                        #         or isinstance(cur.previous_element, bs4.element.NavigableString):
+                        #     content = content[:-5]
+                        if temp.strip() != '':
+                            content += temp.strip() + '<sep>'
                     cur = cur.next_element
                     # content = content[:-5]
                 segment = {st.text: content}
             _segments.append(segment)
+        print("Segments:", _segments)
         return _segments
 
     @staticmethod
     def get_entries(_segments: List[Dict]):
+        def repl(txt):
+            prefix = txt.group('pre')
+            subfix = txt.group('sub')
+            return prefix + '<colon>' + subfix
+
         _entries = {}
         for segment in _segments:
             (key, value), = segment.items()
             if key == "Header":
                 contents = value.split('<sep>')
                 for content in contents:
-                    entry_list = re.split(":|：", content)
+                    content_temp = re.sub(r'(?P<pre>(http|https|ftp)):(?P<sub>//\S+)', repl, content)
+                    entry_list = re.split(":|：", content_temp)
+                    print(entry_list)
                     if len(entry_list) != 2:
                         if ':' in content or '：' in content:
                             k = entry_list[0].replace(':', '').replace('：', '')

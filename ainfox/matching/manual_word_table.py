@@ -45,17 +45,18 @@ def matching(key_str: str, _word_table: dict):
 
     # cannot find
     if ret_key is None:
-        updated = copy.deepcopy(_word_table)
+        ret_key = 'UnKnown'
+        # updated = copy.deepcopy(_word_table)
         print(f"{key_str} cannot find a similar key in word table.")
-        new_path = input("New json path?: ")
-        for _key in _word_table.keys():
-            isvalid = input(f"{key_str} as {_key}? (Y/N): ")
-            if isvalid == 'Y':
-                updated[_key].append(key_str)
-                ret_key = _key
-                break
-        with open(new_path, 'w') as _fp:
-            json.dump(updated, _fp, indent=4)
+        # new_path = input("New json path?: ")
+        # for _key in _word_table.keys():
+        #     isvalid = input(f"{key_str} as {_key}? (Y/N): ")
+        #     if isvalid == 'Y':
+        #         updated[_key].append(key_str)
+        #         ret_key = _key
+        #         break
+        # with open(new_path, 'w') as _fp:
+        #     json.dump(updated, _fp, indent=4)
     return ret_key
 
 

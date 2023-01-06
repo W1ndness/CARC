@@ -18,6 +18,9 @@ def data_match(json_str):
     ret = copy.deepcopy(data_dict)
     word_table = load_word_table()
     for k in data_dict:
+        if k == 'Unknown':
+            del ret[k]
+            continue
         concept = matching(k, word_table)
         ret[concept] = ret.pop(k)
     return json.dumps(ret, ensure_ascii=False)
@@ -40,6 +43,7 @@ def extraction(_url):
     page = WebPage(url=_url)
     page.crawl(response_type="get")
     page.analyze()
+    # print(page.soup)
 
     div_filter = DivFilter(page)
     table_filter = TableFilter(page)
@@ -51,16 +55,25 @@ def extraction(_url):
     tables = table_filter.filtration()
 
     datajson = dict()
+    # print("Tables below:")
+    # print(tables, len(tables))
+    # print("Div tags below:")
+    # print(divs, len(divs))
 
     # table
     if not tables:
-        pass
+        print("No table to extract...")
     else:
         for i, table in enumerate(tables):
+            print(i, table)
             in_html = str(table)
             in_html = table_dealer.replace_br(in_html)
             in_html = table_dealer.replace_p(in_html)
-            in_df = table_dealer.to_table(in_html)
+            print(in_html)
+            try:
+                in_df = table_dealer.to_table(in_html)
+            except ValueError:
+                continue
             print(in_df)
             entries = table_dealer.get_entries(in_df)
             # print(entries)
@@ -70,15 +83,19 @@ def extraction(_url):
 
     # div
     if not divs:
-        pass
-    elif tables:
-        pass
+        print("Didn't find div tag to extract...")
     else:
         new = div_dealer.normalize(str(divs[0]))
         titles = div_dealer.find_titles(new)
+        print(titles)
+        if titles[0].name == 'h1':
+            datajson.update({'姓名': titles[0].text})
+            del titles[0]
         soup = BeautifulSoup(new, features="lxml")
         segments = div_dealer.segmentation(soup, titles)
+        print(segments)
         entries = div_dealer.get_entries(segments)
+        print(entries)
         datajson.update(dict(datajson, **entries))
         path = os.path.join(div_dir, f'div.json')
         div_dealer.save_as_json(entries, path)
