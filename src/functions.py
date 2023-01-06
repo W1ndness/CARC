@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 
 def data_match(json_str):
     data_dict = ast.literal_eval(json_str)
+    print(data_dict)
     ret = copy.deepcopy(data_dict)
     word_table = load_word_table()
     for k in data_dict:
@@ -23,6 +24,7 @@ def data_match(json_str):
             continue
         concept = matching(k, word_table)
         ret[concept] = ret.pop(k)
+    print("After matching returns:", ret)
     return json.dumps(ret, ensure_ascii=False)
 
 
@@ -99,7 +101,11 @@ def extraction(_url):
         datajson.update(dict(datajson, **entries))
         path = os.path.join(div_dir, f'div.json')
         div_dealer.save_as_json(entries, path)
-    return json.dumps(datajson, ensure_ascii=False)
+        ret = copy.deepcopy(datajson)
+        for k, v in datajson.items():
+            if type(v) != list:
+                ret[k] = [v]
+    return json.dumps(ret, ensure_ascii=False)
 
 
 if __name__ == '__main__':
